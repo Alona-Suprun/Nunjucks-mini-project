@@ -1,0 +1,24 @@
+{% import "./image.njk" as image %}  
+
+<h2>What kind of person you are?</h2>
+<p>..please choose the image which characterises you best</p>
+
+<div class="img-wrapper">
+    <button data-action="disableB" type="button" value="Show Div" onclick="showDiv()" class="img">
+        {{ image.image('../images/deadline.gif', alt='1st-image', width='400px') }}
+    </button>
+    <button data-action="disableB2" type="button" value="Show Div" onclick="showDiv2()" class="img2">
+        {{ image.image('../images/deadline.png', alt='1st-image', width='430px') }}
+    </button>
+</div>
+
+<button type="button" value="Clear" onclick="clearDiv()" class="clearButton">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+        Clear
+</button>
+
+  
+

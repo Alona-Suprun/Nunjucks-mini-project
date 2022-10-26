@@ -1,0 +1,33 @@
+.img-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img {
+	
+	cursor: url('../images/Blob_smiling.svg'), auto;	
+	border-color: transparent;
+	margin-right: 50px;
+
+	&:disabled,
+	&[disabled] {
+		cursor: not-allowed;
+	}
+}
+
+.img2 {
+
+	cursor: url('../images/AwesomeSmile.svg'), auto;	
+	border-color: transparent;
+
+	&:disabled,
+	&[disabled] {
+		cursor: not-allowed;
+	}
+}
+
+.test {
+	background-color: blue;
+	font-size: large;
+}

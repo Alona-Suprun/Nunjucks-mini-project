@@ -1,0 +1,35 @@
+{% import "./image.njk" as image %}
+  
+<div id="imageDiv"  style="display:none;" > 
+    {{ image.image('../images/1.jpg', alt='1st-image', width='900px') }}
+</div>
+<div id="imageDiv2"  style="display:none;" > 
+  {{ image.image('../images/2.jpg', alt='2nd-image', width='900px') }}
+</div>
+
+<script>
+    const disableButton = document.querySelector('[data-action="disableB"]');
+    const disableButton2 = document.querySelector('[data-action="disableB2"]');
+
+    function showDiv() {
+        document.getElementById('imageDiv').style.display = "block";
+        disableButton.setAttribute('disabled', 'disabled');
+        disableButton2.setAttribute('disabled', 'disabled');
+    }
+    function showDiv2() {
+        document.getElementById('imageDiv2').style.display = "block";
+        disableButton.setAttribute('disabled', 'disabled');
+        disableButton2.setAttribute('disabled', 'disabled');
+    }
+  
+    const ids = ['imageDiv','imageDiv2'];
+
+    function clearDiv() {
+        for (var i = 0; i < ids.length; i++) {
+            document.getElementById(ids[i]).style.display = "none";
+            disableButton.removeAttribute('disabled', 'disabled');
+            disableButton2.removeAttribute('disabled', 'disabled');
+        }
+    }
+  
+</script>

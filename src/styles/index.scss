@@ -1,0 +1,38 @@
+@import "../../node_modules/normalize.css/normalize";
+@import 'shared/variables';
+@import 'shared/url';
+@import 'components/img';
+@import 'components/button';
+@import 'components/items-list';
+
+
+body {
+	text-align: center;
+	align-items: center;
+	color: $color-2;
+	font-size: 28px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.bg {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		  -45deg, 
+		  rgb(185, 232, 253) 0%, 
+		  rgb(149, 159, 209) 25%, 
+		  rgb(242, 255, 170) 51%, 
+		  rgb(179, 243, 160) 100%
+	);  
+	animation: AnimateBG 20s ease infinite;
+  }
+  
+  @keyframes AnimateBG { 
+	0%{background-position:0% 50%}
+	50%{background-position:100% 50%}
+	100%{background-position:0% 50%}
+  }

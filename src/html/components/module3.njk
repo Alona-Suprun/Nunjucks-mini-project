@@ -1,0 +1,11 @@
+{% import "./items.njk" as items %}
+
+
+<h2>Something to read about deadlines:</h2>
+<ul class="item-list">
+{% for item in items.items %}
+  <li><a target="blank" href="{{item.href}}">{{ item.title }}</a></li>
+{% else %}
+  <li>We have nothing to readd for you (((</li>
+{% endfor %}
+</ul>

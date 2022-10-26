@@ -1,0 +1,11 @@
+.item-list {
+    text-align: left;
+
+    & li {
+        & a {
+            color: darkblue;
+            text-decoration: none;
+        }
+    }
+    
+}
