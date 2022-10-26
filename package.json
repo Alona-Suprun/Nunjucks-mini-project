@@ -2,7 +2,7 @@
 	"name": "mini-starterkit",
 	"version": "1.0.1",
 	"main": "index.js",
-	"repository": "https://github.com/Alona-Suprun/Nunjucks-mini-project",
+	"repository": "https://alona-suprun.github.io/Nunjucks-mini-project/",
 	"author": "Alona Suprun",
 	"license": "MIT",
 	"description": "Mini Nunjucks project based on Parcel.",
